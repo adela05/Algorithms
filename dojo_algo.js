@@ -35,3 +35,24 @@ x[2] = y[x.length-3] + x[x[0] + y[0]];
 // x[2] = y[4-3= answer is (1)] + x[1] + y[2] = answer is (3)
 //x[2] = y[1] + x[3] = answer 4+7 = 11
 console.log(x);  // answer is [1,3,11,7]
+
+// activity 1,  Level 3
+var x = [1,3,5]; // [5,3,5] 2nd value
+x[0] = x[2]; // set x[0] to be the value of x[2], answer is 5, [5,3,5]
+x[1] = x[0]; // set x[1] to be the value of x[0], answer is 5, [5,5,5]
+console.log(x); // answer [5,5,5]
+
+//activity 2, Level 4
+var x = [1,3,5];
+var y = [0,5,7];
+x[0] = x[1] + y[2]; //(3+7=10) set [0] to be the value of 10, [10,3,5]
+y[1] = y[2] - x[0]; //(7-1=6) set [1] to be the value of 6, [0,6,7]
+console.log(x);  // answer is [10,3,5]
+
+//activity 3, Level 4
+var x = [1,3,5,8];
+x[0] = x[x.length-1]; // (4-1=3) set [0] to be the value of [3], answer is 8
+// set [0] to be the value of 8
+console.log; // answer is [8,3,5,8]
+
+//activity 4, Level 4
